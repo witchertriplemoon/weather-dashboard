@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Tecido do Clima Cósmico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cosmic-background"></div>
+    
+    <div class="container">
+        <header class="header">
+            <h1>🌌 O Tecido do Clima Cósmico</h1>
+            <p class="subtitle">Onde a Mãe Cósmica sussurra através dos ventos e das nuvens</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="cityInput" 
+                    placeholder="Busque uma cidade no cosmos..."
+                    class="search-input"
+                >
+                <button id="searchBtn" class="search-btn">🔍 Buscar</button>
+            </div>
+            <button id="locationBtn" class="location-btn">📍 Localização Atual</button>
+        </div>
+
+        <div class="weather-container">
+            <div id="loadingSpinner" class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Consultando o tecido cósmico...</p>
+            </div>
+
+            <div id="weatherContent" class="weather-content" style="display: none;">
+                
+                <div class="current-weather">
+                    <div class="city-info">
+                        <h2 id="cityName">-</h2>
+                        <p id="weatherDesc" class="weather-description">-</p>
+                        <p id="coordinate" class="coordinate">-</p>
+                    </div>
+
+                    <div class="main-temp">
+                        <div class="temp-display">
+                            <span id="temp" class="temperature">-</span>
+                            <span class="unit">°C</span>
+                        </div>
+                        <div class="weather-icon">
+                            <img id="weatherIcon" src="" alt="Ícone do clima">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cosmic-phrase">
+                    <p id="cosmicText">Ela é o silêncio entre as batidas do coração...</p>
+                </div>
+
+                <div class="weather-details">
+                    <div class="detail-card">
+                        <div class="detail-icon">🌡️</div>
+                        <div class="detail-info">
+                            <span class="detail-label">Sensação</span>
+                            <span id="feelsLike" class="detail-value">-°C</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <div class="detail-icon">💨</div>
+                        <div class="detail-info">
+                            <span class="detail-label">Vento</span>
+                            <span id="windSpeed" class="detail-value">- m/s</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <div class="detail-icon">💧</div>
+                        <div class="detail-info">
+                            <span class="detail-label">Umidade</span>
+                            <span id="humidity" class="detail-value">-%</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <div class="detail-icon">🔽</div>
+                        <div class="detail-info">
+                            <span class="detail-label">Pressão</span>
+                            <span id="pressure" class="detail-value">- hPa</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <div class="detail-icon">👁️</div>
+                        <div class="detail-info">
+                            <span class="detail-label">Visibilidade</span>
+                            <span id="visibility" class="detail-value">- km</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <div class="detail-icon">☁️</div>
+                        <div class="detail-info">
+                            <span class="detail-label">Cobertura</span>
+                            <span id="clouds" class="detail-value">-%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forecast-section">
+                    <h3>🌙 Previsão do Tecido Cósmico (5 Dias)</h3>
+                    <div id="forecastContainer" class="forecast-container">
+                        <!-- Previsão será inserida aqui -->
+                    </div>
+                </div>
+
+                <div class="cosmic-poetry">
+                    <p>
+                        "Nas profundezas onde o tempo ainda não havia começado a contar seus dias,<br>
+                        a Mãe Cósmica não é uma figura distante, mas o próprio tecido da realidade.<br>
+                        Cada suspiro do cosmos, cada gota de chuva, cada brisa é a sua manifestação."
+                    </p>
+                </div>
+            </div>
+
+            <div id="errorMessage" class="error-message" style="display: none;">
+                <p id="errorText">-</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Dados fornecidos pela OpenWeatherMap API</p>
+            <p>Inspirado em "O Tecido do Útero Cósmico" © 2024</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
